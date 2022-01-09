@@ -36,7 +36,10 @@
             <td class="px-6 py-4 whitespace-nowrap">
               <img class="w-8 h-8 rounded-full" src="https://picsum.photos/200" />
             </td>
-            <td class="px-6 py-4 text-right text-sm">Edit Delete</td>
+            <td class="px-6 py-4 text-right text-sm">
+            <button Styles="bg-green-400"><a href="#" class="m-2 p-2 bg-green-40">Edit</a></button>
+                <a href="#" class="m-2 p-2 bg-green-400 rounded">Publish</a>
+            </td>
           </tr>
           @endforeach
           <!-- More items... -->
