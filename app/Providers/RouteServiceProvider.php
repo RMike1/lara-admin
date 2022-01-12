@@ -8,8 +8,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
 
+
 class RouteServiceProvider extends ServiceProvider
 {
+    
     /**
      * The path to the "home" route for your application.
      *
@@ -17,22 +19,24 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
+    // public const HOME = '/dashboard';
+    
+
+    // /**
+    //  * The controller namespace for the application.
+    //  *
+    //  * When present, controller route declarations will automatically be prefixed with this namespace.
+    //  *
+    //  * @var string
+    //  */
+    //  protected $namespace = 'App\Http\Controllers';
     public const HOME = '/dashboard';
-
-    /**
-     * The controller namespace for the application.
-     *
-     * When present, controller route declarations will automatically be prefixed with this namespace.
-     *
-     * @var string|null
-     */
-    // protected $namespace = 'App\\Http\\Controllers';
-
+    protected $namespace = 'App\Http\Controllers\PostController';
     /**
      * Define your route model bindings, pattern filters, etc.
-     *
-     * @return void
      */
+    
+     
     public function boot()
     {
         $this->configureRateLimiting();
