@@ -48,7 +48,7 @@
         @endcan
             @can('publish post')
             
-                <a href="#" class="m-4 p-4 bg-green-400 rounded">Publish</a>
+                <a href="{{ route('posts.publish', $post->id)}}" class="m-4 p-4 bg-green-400 rounded">Publish</a>
                
             @endcan
             </td>

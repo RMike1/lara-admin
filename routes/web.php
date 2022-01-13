@@ -25,3 +25,4 @@ require __DIR__.'/auth.php';
 
 Route::get('/posts.create', [PostController::class, 'create'])->name('posts.create');//->middleware('permission:write post');
 Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');//->middleware('role:editor|admin');
+Route::get('/posts/{post}/publish', [PostController::class, 'publish'])->name('posts.publish');//->middleware('role:editor|admin');

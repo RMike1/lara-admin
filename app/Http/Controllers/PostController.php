@@ -24,7 +24,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return "creat post is here!!";
+        return "<h1>created post is here...</h1>";
     }
 
     /**
@@ -44,9 +44,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function publish($id)
     {
-        //
+        return "<h1>published post is here!!</h1>".'<h1>'.$id.'</h1>';
     }
 
     /**
@@ -57,7 +57,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-            return "edit post with id: ".$id;
+            return "<h1>edit post with id: </h1>".'<h1>'.$id.'</h1>';
     }
 
     /**
